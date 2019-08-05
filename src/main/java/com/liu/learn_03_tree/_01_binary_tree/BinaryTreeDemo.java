@@ -55,6 +55,10 @@ class BinaryTree{
             this.root.preOrder();
         }
     }
+
+    public HeroNode findHeroNodePreOrder(int no) {
+        return this.root.findHeroNodePreOrder(no);
+    }
 }
 class HeroNode{
     private int no;
@@ -139,5 +143,12 @@ class HeroNode{
             right.postOrder();
         }
         System.out.println(this);
+    }
+
+    public HeroNode findHeroNodePreOrder(int no) {
+        if (no == this.no) {
+            return null;
+        }
+        return  null;
     }
 }
